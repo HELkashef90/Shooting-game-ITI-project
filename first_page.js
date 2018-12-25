@@ -1,3 +1,21 @@
+// var x = document.getElementById("bkAduio");
+// var playbtn;
+// playbtn=document.getElementById('playBkMusicbtn');
+
+// var playfun = function playPauseAduio (){
+//     if (x.pause){
+//     x.play(); 
+//     playbtn.src ="assets\\imgs\\pause_icon.png" }
+//     else {
+//         x.pause();
+//     playbtn.src = "assets\\imgs\\play_icon.png";
+
+//     }
+// }
+// playbtn.addEventListener("click",playfun);
+
+
+
 // var song , playbtn , mutebtn;
 
 //     song = loadSound("assets\audio\009.mp3");

@@ -1,6 +1,6 @@
 body
 { 
-	background-image: url("background_3.gif");
+	background-image: url("background_3.gif");	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -37,3 +37,5 @@ img#playBkMusicbtn , img#muteBkMusicbtn {
 	height: 30px;
 	cursor: pointer;
 }
+
+embed { opacity: .2;}

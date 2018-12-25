@@ -10,8 +10,8 @@
 </head>
 <body>
     <!-- controls background audio -->
-    <img id='playBkMusicbtn' src="assets\imgs\pause_icon.png">
-    <img id="muteBkMusicbtn" src="assets\imgs\unmute.png" >
+    <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
+    <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
 <div align = 'center'>
     <div>
     <img class="center_logo" id='logo1' align = 'center' src="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_1.png" alt="">
@@ -20,10 +20,27 @@
     <img class="center_logo" id='logo2' align = 'center' src="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_2.gif" alt="">
     </div>
 </div>
-<div class="center_btn" align ='center' id='fist_page_btn'>
+ <div class="center_btn" align ='center' id='fist_page_btn'>
     <button class="mainbtn" id='btn_play' >Select Game</button>
     <button class="mainbtn" id='btn_credits' >Credits</button>
-</div>
-<!-- <embed id="bkAduio" src="assets\audio\009.mp3" autostart="true" loop="true" hidden="true" volume="75"></body> -->
+ </div>
+ <!-- <embed id="bkAduio" src="assets\audio\33 Mario Bros Stage Theme 2.mp3" autostart="true" loop="true" hidden="false" volume="75" height="50" width="70"></body> -->
+    <audio id="bkAduio" >
+            <source src="assets\audio\mario2.ogg" type="audio/ogg">
+            <source src="assets\audio\mario2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
     <script src="first_page.js"></script>
+    
+<script>
+        var x = document.getElementById("bkAduio"); 
+        function playAudio() { 
+          x.play(); 
+        } 
+
+        function pauseAudio() { 
+          x.pause(); 
+        } 
+        </script>
+</body> 
 </html>
