@@ -1,0 +1,30 @@
+body
+{ 
+	background-image: url("background_3.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius: 25px;
+
+}
+
+.center_logo {
+   width: 20%;
+   height: 20%;
+}
+.center_btn {
+	margin: 300px 0px 0px 0px;
+}
+button {
+	text-align: center;
+			font-weight: bold;
+			margin-left: 10px;
+			width: 200px;
+			height: 30px;
+			border-radius: 8px;
+			background-color: tomato;
+			border: black;
+			box-shadow: 25px;
+			color: white;
+}
+button:active {    color: green; }
