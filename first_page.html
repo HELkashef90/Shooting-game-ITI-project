@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GameZone Team</title>
     <link rel="icon" href="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_1.png"> <link>
-    <link rel="stylesheet" href="first_page.css">
+    <link rel="stylesheet" href="first_page.css">    
 </head>
 <body>
+    <!-- controls background audio -->
+    <img id='playBkMusicbtn' src="assets\imgs\pause_icon.png">
+    <img id="muteBkMusicbtn" src="assets\imgs\unmute.png" >
 <div align = 'center'>
     <div>
     <img class="center_logo" id='logo1' align = 'center' src="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_1.png" alt="">
@@ -18,9 +21,9 @@
     </div>
 </div>
 <div class="center_btn" align ='center' id='fist_page_btn'>
-    <button id='btn_play' >Select Game</button>
-    <button id='btn_credits' >Credits</button>
+    <button class="mainbtn" id='btn_play' >Select Game</button>
+    <button class="mainbtn" id='btn_credits' >Credits</button>
 </div>
-
-</body>
+<!-- <embed id="bkAduio" src="assets\audio\009.mp3" autostart="true" loop="true" hidden="true" volume="75"></body> -->
+    <script src="first_page.js"></script>
 </html>

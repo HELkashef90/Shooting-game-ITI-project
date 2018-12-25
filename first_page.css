@@ -15,7 +15,7 @@ body
 .center_btn {
 	margin: 300px 0px 0px 0px;
 }
-button {
+.mainbtn {
 	text-align: center;
 			font-weight: bold;
 			margin-left: 10px;
@@ -26,5 +26,14 @@ button {
 			border: black;
 			box-shadow: 25px;
 			color: white;
+			cursor: pointer;
+			outline: none;
 }
-button:active {    color: green; }
+.mainbtn:active {    color: green; }
+
+img#playBkMusicbtn , img#muteBkMusicbtn {
+	border: none;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
