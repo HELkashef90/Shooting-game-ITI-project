@@ -4,42 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GameZone Team</title>
-    <link rel="icon" href="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_1.png"> <link>
-    <link rel="stylesheet" href="first_page.css">    
+    <title>GameZoneTeam</title>
+    <link rel="icon" href="assets\imgs\team_logo_1.png"> <link>
+    <link rel="stylesheet" href="main_pages.css">    
 </head>
+
 <body>
     <!-- controls background audio -->
+    <div>
     <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
     <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
+    </div>
+    <!-- logo -->
 <div align = 'center'>
     <div>
-    <img class="center_logo" id='logo1' align = 'center' src="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_1.png" alt="">
+    <img class="center_logo" id='logo1' align = 'center' src="assets\imgs\team_logo_1.png" alt="">
     </div>
     <div>
-    <img class="center_logo" id='logo2' align = 'center' src="D:\ITI-IoT 10-2018\client side\Shooting-game-ITI-project\assets\first-page\team_logo_2.gif" alt="">
+    <img class="center_logo" id='logo2' align = 'center' src="assets\imgs\team_logo_2.gif" alt="">
     </div>
 </div>
+    <!-- main button  -->
  <div class="center_btn" align ='center' id='fist_page_btn'>
-    <button class="mainbtn" id='btn_play' >Select Game</button>
-    <button class="mainbtn" id='btn_credits' >Credits</button>
+    <button onclick="location.href='select_game.html'" class="mainbtn" id='selectBtn' >Select Game</button>
+    <button class="mainbtn" id='creditsBtn' >Credits</button>
  </div>
+
+ <!-- credits Popup box -->
+ <div id="creditsPupUp" class="pupUpBackGround ">
+  
+        <form class="pupUpContent animate ">
+              
+          <div class="imgcontainer">
+            <span id="close" class="close" title="Close PopUp">&times;</span>
+            <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
+            <p>Team Credits ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Dolor dignissimos inventore voluptatum atque obcaecati,
+             minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
+            quas deserunt, adipisci quae alias! </p>
+      </div>
+      </div>
  <!-- <embed id="bkAduio" src="assets\audio\33 Mario Bros Stage Theme 2.mp3" autostart="true" loop="true" hidden="false" volume="75" height="50" width="70"></body> -->
+    
+    <script src="main_pages.js"></script>
+
+
+
+    <!-- background audio src -->
     <audio id="bkAduio" loop="true">
             <source src="assets\audio\mario2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
-    <script src="first_page.js"></script>
-    
-<script>
-        var x = document.getElementById("bkAduio"); 
-        function playAudio() { 
-          x.play(); 
-        } 
+    <!-- backGround audio script -->
+    <script>
+            var x = document.getElementById("bkAduio"); 
+            x.play();
+            function playAudio() { 
+            x.play(); 
+            } 
 
-        function pauseAudio() { 
-          x.pause(); 
-        } 
-        </script>
+            function pauseAudio() { 
+            x.pause(); 
+            } 
+            </script>
 </body> 
 </html>

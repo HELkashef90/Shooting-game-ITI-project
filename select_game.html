@@ -1,3 +1,55 @@
-<button id='btn_play' >Play Now</button>
-<button id='btn_story' >Game Story</button>
-<button id='btn_how_play' >How To Play</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SelectGame</title>
+    <link rel="icon" href="assets\imgs\team_logo_1.png"> <link>
+    <link rel="stylesheet" href="main_pages.css">    
+
+
+</head>
+<body>
+     <!-- controls background audio -->
+     <div>
+     <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
+     <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
+    </div>
+    <!-- Games logo -->
+     <div align = 'center'>
+            <img  id='policeSniper' onclick="location.href='police_sniper.html'" src="assets\imgs\police_sniper.png" alt="">
+            <div>
+            <img  id='policeSniperText'  src="assets\imgs\police_sniper_text.gif" alt="">
+        </div>
+
+        </div>
+        <!-- main button -->
+    
+     <button onclick="location.href='first_page.html'" class="mainbtn" id='backBtn'>Back</button>
+  
+
+      
+    <script src="main_pages.js"></script>
+
+    <!-- background audio src -->
+    <audio id="bkAduio" loop="true">
+            <source src="assets\audio\mario2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>  
+
+    <!-- backGround audio script -->
+    <script>
+        var x = document.getElementById("bkAduio"); 
+        x.play();
+        function playAudio() { 
+            x.play(); 
+        } 
+
+        function pauseAudio() { 
+            x.pause(); 
+        } 
+        </script>
+    
+</body>
+</html>
