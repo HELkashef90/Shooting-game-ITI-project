@@ -9,6 +9,7 @@ var previousNumber
 var thiefFlag=0
 var click=1
 var numberOfHeart;
+var numberOfRemain=7
 
 //object to get random numbers
 var randomObj={
@@ -70,6 +71,12 @@ var timeObj={
   { //change of thief pic
     mainPicture.src='thief.png'
     countOfAppearance=0;
+    var remain = document.getElementById('remain');
+     numberOfRemain = remain.innerHTML;
+    numberOfRemain--;
+    remain.innerHTML = numberOfRemain;
+    if(numberOfRemain==0)
+    {window.location.href = "gameWin.html";}
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
     if(click==0 && policeFlag==0)
