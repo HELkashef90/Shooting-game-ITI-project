@@ -42,11 +42,25 @@
              Dolor dignissimos inventore voluptatum atque obcaecati,
              minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
             quas deserunt, adipisci quae alias! </p>
+            </form>
       </div>
       </div>
+      <!-- welcome popup -->
+    <div id="welcomePupUp" >
+        <form class="pupUpContent animate">
+            <div class="imgcontainer">
+                <span onclick="playAudio()" id="close3" class="close" title="Close PopUp">&times;</span>
+                <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
+                <p>welcome----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor dignissimos inventore voluptatum atque obcaecati,
+                minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
+                quas deserunt, adipisci quae alias! </p>
+                <!-- <button onclick="playAudio()" class="mainbtn" id='letsStartBtn' >Let's Go</button> -->
+            </div> 
+        </form>
+    </div>
  <!-- <embed id="bkAduio" src="assets\audio\33 Mario Bros Stage Theme 2.mp3" autostart="true" loop="true" hidden="false" volume="75" height="50" width="70"></body> -->
     
-    <script src="main_pages.js"></script>
 
 
 
@@ -58,7 +72,7 @@
     <!-- backGround audio script -->
     <script>
             var x = document.getElementById("bkAduio"); 
-            x.play();
+            // x.play();
             function playAudio() { 
             x.play(); 
             } 
@@ -67,5 +81,8 @@
             x.pause(); 
             } 
             </script>
+
+    <script src="main_pages.js"></script>
+
 </body> 
 </html>

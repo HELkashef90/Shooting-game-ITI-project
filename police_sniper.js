@@ -26,11 +26,15 @@ function showStory (){
 
 
 // If user clicks anywhere outside of the pupup, Pupup will close
-
+var storyAduio = document.getElementById("storyAudio");
+var bkAduio =document.getElementById("bkAduio");
 window.onclick = function(event) {
     if (event.target == howToPlayPupup || event.target == storyPupup) {
         howToPlayPupup.style.display = "none";
-        storyPupup.style.display = "none";
+        // storyPupup.style.display = "none";
+        // bkAduio.play() =true;
+        // storyAduio.pause()=true; 
+        
     }
 }
 

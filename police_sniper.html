@@ -29,14 +29,14 @@
     <div  class="center_btn" align = 'center' >
         <button onclick="location.href='select_game.html'" class="mainbtn" >Back</button>
         <button  class="mainbtn" id='howToPlay' >How to play</button>
-        <button class="mainbtn" id='Story' >Story</button>
+        <button onclick="playAudio1();pauseAudio()" class="mainbtn" id='Story' >Story</button>
      </div>
 
      <!-- story popup -->
     <div id="storyPupUp" class="pupUpBackGround">
         <form class="pupUpContent animate">
             <div class="imgcontainer">
-                <span id="close2" class="close" title="Close PopUp">&times;</span>
+                <span onclick="pauseAudio1() ; playAudio()" id="close2" class="close" title="Close PopUp">&times;</span>
                 <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
                 <p>story ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolor dignissimos inventore voluptatum atque obcaecati,
@@ -60,14 +60,14 @@
         </form>
     </div>
     
-    <!-- Script File -->
-    <script src="police_sniper.js"></script>
+    
 
     <!-- background audio src -->
     <audio id="bkAduio" loop="true">
             <source src="assets\audio\mario2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
+            
 
     <!-- backGround audio script -->
     <script>
@@ -81,5 +81,26 @@
             x.pause(); 
             } 
             </script>  
+
+    <!-- story audio src -->
+    <audio id="storyAudio" loop="true">
+        <source src="assets\audio\story.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        
+    <!-- story audio script -->
+     <script>
+        var x1 = document.getElementById("storyAudio"); 
+        // x1.play();
+        function playAudio1() { 
+        x1.play(); 
+        } 
+
+        function pauseAudio1() { 
+        x1.pause(); 
+        } 
+        </script>
+        <!-- Script File -->
+    <script src="police_sniper.js"></script>
 </body>
 </html>

@@ -22,3 +22,11 @@ function closePupUp()
 closBtn.addEventListener('click',closePupUp);
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
+// close welcome pupUp
+var welcomePupup = document.getElementById("welcomePupUp");
+var closBtn2 = document.getElementById('close3');
+// var welcomeBtn = document.getElementById("letsStartBtn"); 
+function closePupUp2()
+{welcomePupup.style.display = "none";}
+// welcomeBtn.addEventListener('click',closePupUp2);
+ closBtn2.addEventListener('click',closePupUp2);
