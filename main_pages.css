@@ -67,6 +67,9 @@ img#policeSniperText {
 	margin-top: 0px;
 }
 
+/* /////////////////////////////// */
+
+/* PopUp Styling  */
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
@@ -121,3 +124,6 @@ img#policeSniperText {
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
+
+/* End of PopUp styling */
+/* ////////////////////////////////////// */

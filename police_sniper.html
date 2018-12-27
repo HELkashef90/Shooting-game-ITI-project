@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="main_pages.css"> 
 </head>
 <body>
+
     <!-- controls background audio -->
     <div>
             <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
             <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
-            </div>
-<!-- Games logo -->
-<div align = 'center'>
+    </div>
+
+    <!-- Games logo -->
+    <div align = 'center'>
         <img  id='policeSniperPlay'  src="assets\imgs\police_sniper.png" alt="">
         <div>
         <img  id='policeSniperText'  src="assets\imgs\play.gif" alt="">
@@ -24,46 +26,49 @@
     </div>
     
     <!-- main button  -->
- <div  class="center_btn" id='policeSniperPageBtn'>
+    <div  class="center_btn" id='policeSniperPageBtn'>
         <button onclick="location.href='select_game.html'" class="mainbtn" >Back</button>
         <button  class="mainbtn" id='howToPlay' >How to play</button>
         <button class="mainbtn" id='Story' >Story</button>
      </div>
 
-     <!-- story pupup -->
-     <div id="storyPupUp" class="pupUpBackGround">
-
-                <form class="pupUpContent animate">
-                <div class="imgcontainer">
+     <!-- story popup -->
+    <div id="storyPupUp" class="pupUpBackGround">
+        <form class="pupUpContent animate">
+            <div class="imgcontainer">
                 <span id="close2" class="close" title="Close PopUp">&times;</span>
                 <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
                 <p>story ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolor dignissimos inventore voluptatum atque obcaecati,
                 minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
                 quas deserunt, adipisci quae alias! </p>
-                </div>
-                </div>
-     <!-- how to play pupup -->
-
- <div id="howToPlayPupUp" class="pupUpBackGround">
-
+            </div> 
+        </form>
+    </div>
+    
+     <!-- how to play popup -->
+    <div id="howToPlayPupUp" class="pupUpBackGround">
         <form class="pupUpContent animate">
-        <div class="imgcontainer">
-        <span id="close" class="close" title="Close PopUp">&times;</span>
-        <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
-        <p>hoe to play ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dolor dignissimos inventore voluptatum atque obcaecati,
-        minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
-        quas deserunt, adipisci quae alias! </p>
-        </div>
-        </div>
-        <script src="police_sniper.js"></script>
+            <div class="imgcontainer">
+                <span id="close" class="close" title="Close PopUp">&times;</span>
+                <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
+                <p>hoe to play ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor dignissimos inventore voluptatum atque obcaecati,
+                minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
+                quas deserunt, adipisci quae alias! </p>
+            </div>
+        </form>
+    </div>
+    
+    <!-- Script File -->
+    <script src="police_sniper.js"></script>
 
-  <!-- background audio src -->
+    <!-- background audio src -->
     <audio id="bkAduio" loop="true">
             <source src="assets\audio\mario2.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
+
     <!-- backGround audio script -->
     <script>
             var x = document.getElementById("bkAduio"); 
