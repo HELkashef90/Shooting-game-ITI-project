@@ -13,7 +13,10 @@ body
    height: 20%;
 }
 .center_btn {
-	margin: 250px 0px 0px 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .mainbtn {
 	text-align: center;
