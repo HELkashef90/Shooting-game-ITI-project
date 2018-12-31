@@ -8,6 +8,14 @@ body
 
 }
 
+.gamePage {
+    background-image: url("city.jpg");	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover ;
+    border-radius: 25px;
+    /* background-size: 100%; */
+}
 .center_logo {
    width: 20%;
    height: 20%;
@@ -142,3 +150,65 @@ div#welcomePupUp {
 
 /* End of PopUp styling */
 /* ////////////////////////////////////// */
+
+
+.char {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+
+.char:hover {
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.charPopUp {
+    background-color:rgba(0,0,0,0.4);
+    margin: 4% auto 5% auto;
+    border: 1px solid #888;
+    width: 30%;
+    height: 720px;
+    border-radius: 5%;
+    
+}
+h1
+{
+    background-color: rgba(61, 161, 161, 0.4);
+    margin-top: 50px;
+}
+
+input {
+    text-align: center;
+    width: 220px;
+    height: 30px;
+    margin-top: 40px;
+    border:2px solid #456879;
+    border-radius:10px;
+	outline: none;
+    
+	
+}
+
+#playNow {
+    text-align: center;
+	font-size: 15px;
+	box-shadow: 0 5px 7px 0 rgba(231, 211, 211, 0.2), 0 2px 7px 0 rgba(179, 157, 157, 0.19);
+	font-weight: bold;
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	border-radius: 8px;
+	background-color: rgb(102, 33, 20,.5);
+	border: black;
+	box-shadow: 25px;
+	color: rgb(14, 6, 6);
+	cursor: pointer;
+	outline: none;
+}
