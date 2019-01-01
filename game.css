@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Bonbon");
+@import url("https://fonts.googleapis.com/css?family=Slackey");
+@import url("https://fonts.googleapis.com/css?family=Fascinate Inline");
+body#gameMainPage
+{ 
+	background-image: url("assets\\imgs\\gamebackgnd.jpg");	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size:1370px 600px;
+    background-position: left;
+    margin:0;
+    cursor: url(scope.cur),default;
+    /* https://www.youtube.com/watch?v=n-AuSopUl6s     
+    due to this tutorial png ,jpg cursors arenot supported */
+
+}
+#userInfoStyling {
+    position: absolute;
+    overflow: hidden;
+    /* Margins */
+    margin: 0px; 
+    display: block;
+    /* width of box*/
+    height: auto;
+    width: 100%;
+    /*styling box*/
+    background-color:#151636;
+    border:#151636;
+    opacity: 1;
+    /* styling font inside*/
+    /* font-family: 'Times';  */
+    font-family:'Slackey'; 
+    font-size: 30px;
+    font-weight: bold;
+    color:aliceblue;
+}
+.userdata
+{
+    position:relative;
+    float:left;
+    width:25%;
+ }

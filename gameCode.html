@@ -1,42 +1,31 @@
 <html>
     <head>
-        
+      <link rel="stylesheet" href="game.css"> 
+      <!-- <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>   -->
     </head>
-    <body>
 
+    <body id="gameMainPage">
+
+      <!-- Criminal will be replaced with canvas -->
       <div id="myDiv" align="middle"> 
-           <img id="pizza"  src="city.jpg" width="1150" height="620">
-           <img id="first"  src=""  alt=" " width="50" height="50 " 
-           style="z-index: 0; left: 30;position: absolute; top: 60px">
-           
-      </div>
-         
-      <!-- name div -->
-      <div style="z-index: 0; left: 300;position: absolute; top: 60px">
-         <b style="color:aliceblue;">Name:</b>
-         <b style="color:aliceblue;" id="Score">default</b>
-      </div>
-      <!-- score div -->
-      <div style="z-index: 0; left: 30;position: absolute; top: 60px"> 
-        <b >Score:</b>
-        <b id="score" >0</b>
-        <b >/20</b>
-      </div>
-      <!-- heart div -->
-      <div style="z-index: 0; left: 600;position: absolute; top: 60px"> 
-          <b style="color:aliceblue;">heart</b> 
-        <b id="heart" style="color:aliceblue;">5</b> 
-      </div>
-      <div style="z-index: 0; left: 800;position: absolute; top: 60px"> 
-          <b style="color:aliceblue;">Remaining:</b>
-         <b style="color:aliceblue;" id="remain">7</b> 
+           <img id="first"  src=""  alt=" no" width="27" height="35 " style= "z-index: 0; left: 1058;position: absolute; top: 397px">      
       </div>
 
+      <!-- name and Score of Player -->
+      <div id="userInfoStyling">
+        <div id="name" class="userdata">
+          <b >Name:</b> <b id="name">default</b>
+        </div>
+        <div id="score" class="userdata"> 
+          <b >Score:</b> <b id="score" >0</b> <b > of 20</b>
+        </div>
+        <div  id="life" class="userdata"> 
+            <b >heart</b> 
+            <b id="heart" >5</b> 
+            <img  src="assets\\imgs\\heart.png" style="width:30px;height:30px;">
+        </div>
+      </div>
 
-
-
-           
-            <script src="gameCode.js"></script>
-          
+      <script src="gameCodeCpy.js"></script>     
     </body>
 </html>
