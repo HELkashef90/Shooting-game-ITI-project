@@ -9,11 +9,15 @@ body
 }
 
 .gamePage {
-    background-image: url("city.jpg");	
+    
+	background-image: url("assets\\imgs\\gamebackgnd.jpg");	
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover ;
-    border-radius: 25px;
+    background-size:100vw 100%;
+    background-position:absolute;
+    margin:0;
+    /* https://www.youtube.com/watch?v=n-AuSopUl6s     
+    due to this tutorial png ,jpg cursors arenot supported */
     /* background-size: 100%; */
 }
 .center_logo {

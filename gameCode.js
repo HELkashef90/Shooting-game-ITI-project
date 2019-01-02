@@ -1,3 +1,38 @@
+var lvl1=document.getElementById('lvl1');
+var lvl2=document.getElementById('lvl2');
+var lvl3=document.getElementById('lvl3');
+var pl1=document.getElementById('pl1');
+var pl2=document.getElementById('pl2');
+var pl3=document.getElementById('pl3');
+var policeChar=document.getElementById('police');
+var policeContain=document.getElementById('policeContainer');
+var speed=2000;
+function makepl1(){window.speed=2000}
+function makepl2(){window.speed=1500}
+function makepl3(){window.speed=1000}
+function modchar1(){
+  policeChar.src="assets\\police\\police1.png";
+}
+function modchar2(){
+  policeChar.src="assets\\police\\police2.png";
+}
+function modchar3(){
+  policeChar.src="assets\\police\\police 3.png";
+}
+lvl1.addEventListener('click',makepl1);
+lvl2.addEventListener('click',makepl2);
+lvl3.addEventListener('click',makepl2);
+pl1.addEventListener('click',modchar1);
+pl2.addEventListener('click',modchar2);
+pl3.addEventListener('click',modchar3);
+
+function starterFunc(){
+//to get user name
+var username=document.getElementById('username').value;
+var nameOnPop=document.getElementById('name');
+nameOnPop.innerHTML = username;
+console.log(username);
+
 var mainPicture=document.getElementById('first')
 var policeAppearance=2;
 var random
@@ -9,6 +44,8 @@ var previousNumber
 var thiefFlag=0
 var click=1
 var numberOfHeart;
+var numberOfRemain=7
+
 
 //object to get random numbers
 var randomObj={
@@ -95,13 +132,20 @@ function increaseCount() {
   heart.innerHTML = numberOfHeart;
 }
 //speed of appearance
-var speed=3000
+
 //object to distribute timing to functions
 var timeObj={
   all:function()
   { //change of thief pic
     mainPicture.src='thief.png'
     countOfAppearance=0;
+    var remain = document.getElementById('remain');
+    numberOfRemain = remain.innerHTML;
+    numberOfRemain--;
+    remain.innerHTML = numberOfRemain;
+    console.log(numberOfRemain)
+    if(numberOfRemain==0)
+    {window.location.href = "gameWin.html";}
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
     if(click==0 && policeFlag==0)
@@ -128,7 +172,29 @@ var timeObj={
   },
 }
  myVar2=setInterval(timeObj.all,speed)
+}
+//close gamePopup 
+var gamePupup = document.getElementById("gamePupUp");
+var userStyling = document.getElementById("userInfoStyling");
+var closBtn4 = document.getElementById('close4');
+var userform =document.forms;
+userform=userform[0];
+var cb=function(e){
+  e.preventDefault();
+}
+userForm.addEventListener('submit',cb);
 
+function closePupUp4()
+{gamePupup.style.display = "none";
+userStyling.style.display= "block"; 
+policeContain.style.display="block";
+}
+
+closBtn4.addEventListener('click',closePupUp4);
+var starter = document.getElementById('playNow');
+
+starter.addEventListener('click',closePupUp4);
+starter.addEventListener('click',starterFunc);
 
 
 

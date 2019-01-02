@@ -1,6 +1,7 @@
 <html>
     <head>
       <link rel="stylesheet" href="gameMain.css"> 
+      <link rel="stylesheet" href="main_pages.css">
       <!-- <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>   -->
     </head>
 
@@ -13,19 +14,85 @@
       </div>
 
       <!-- name and Score of Player -->
+      
       <div id="userInfoStyling">
-        <div id="name" class="userdata">
-          <b >Name:</b> <b id="name">default</b>
-        </div>
-        <div id="score" class="userdata"> 
-          <b >Score:</b> <b id="score" >0</b> <b > of 20</b>
+          
+        <div  class="userdata">
+          <b >Name:</b> <b id="name" >tt</b>
         </div>
         <div  id="life" class="userdata"> 
             <b >heart</b> 
             <b id="heart" >5</b> 
             <img  src="assets\\imgs\\heart.png" style="width:30px;height:30px;">
         </div>
+        <div class="userdata"> 
+            <b >Score:</b>
+            <b id="score" >0</b>
+            <b >/20</b>
+          </div>
+          <div class="userdata"> 
+            <b >Remaining:</b>
+           <b  id="remain">20</b> 
+          </div>
+          <div>
       </div>
+
+    </div>
+    <div id="policeContainer" style="display:none;">
+     <img id="police"src="assets\\police\\police1.png" style=width:70px;height:70px;position:static;">
+    </div>
+    <div id="gamePupUp" class="charPopUp animate">
+
+        
+        <form id="userForm" >
+                  
+            <div class="imgcontainer">
+
+                <h1>Please select your char</h1>
+
+                <span onclick="playAudio()" id="close4" class="close" title="Close PopUp">&times;</span>
+                
+                <div align="center">
+                    <img class="char" id="pl1" src="assets\police\police1.png" alt="">
+                    <img class="char" id="pl2" src="assets\police\police2.png" alt="">
+                    <img class="char" id="pl3" src="assets\police\police 3.png" alt="">
+                </div>
+                <h1>Please select your Level</h1>
+                <div align="center">
+                        <img class="char" id="lvl1" src="assets\imgs\SkillMedalBronze.png" alt="">
+                        <img class="char" id="lvl2" src="assets\imgs\SkillMedalGold.png" alt="">
+                        <img class="char" id="lvl3" src="assets\imgs\SkillMedalNormal.png" alt="">
+            </div>
+                    <h1>User Name</h1>
+                    <input id="username" type="text" placeholder="Hossam">
+            </div>
+            <div align ="center">
+            <!-- <button id="playNow" onclick="starterFun()" >Play Now</button> -->
+            <input type="submit" id="playNow" value="Submit">
+            </div>
+
+        </form>
+        
+     </div>
+      <!-- background audio src -->
+    <audio id="bkAduio" loop="true">
+      <source src="assets\audio\game.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      
+
+<!-- backGround audio script -->
+<script>
+      var x = document.getElementById("bkAduio"); 
+      x.play();
+      function playAudio() { 
+      x.play(); 
+      } 
+
+      function pauseAudio() { 
+      x.pause(); 
+      } 
+      </script>  
 
       <script src="gameCode.js"></script>     
     </body>

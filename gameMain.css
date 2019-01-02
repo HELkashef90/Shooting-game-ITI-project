@@ -24,11 +24,11 @@ body#gameOver
     cursor: default;
 }
 #userInfoStyling {
-    position: absolute;
+    position: static;
     overflow: hidden;
     /* Margins */
     margin: 0px; 
-    display: block;
+    display: none;
     /* width of box*/
     height: auto;
     width: 100%;
