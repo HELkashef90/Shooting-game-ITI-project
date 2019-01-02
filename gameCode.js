@@ -14,7 +14,7 @@ var numberOfHeart;
 var randomObj={
   ran:function ()
   {    while ( lastrandom === random ) {
-      random = Math.floor(Math.random() * 15) + 1; }
+      random = Math.floor(Math.random() * 19) + 1; }
   lastrandom = random;
   return random},
 }
@@ -23,39 +23,41 @@ var randomNumber=randomObj.ran()
 var posArr=[
   /********************* AWL OMARA ********************************** */
   /*----------------- 1st floor--------------------------*/
-  /* 2nd  window  */
-  "z-index: 0; left: 308px;position: absolute; top: 75px",
-  /* 4th window  */
-  "z-index: 0; left: 388px;position: absolute; top: 75px",
-  /*----------------- 2nd floor--------------------------*/
-  "z-index: 0; left: 308px;position: absolute; top: 145px",
-  /* 3rd window  */
-  "z-index: 0; left: 348px;position: absolute; top: 145px",
-  /*----------------- 3rd floor--------------------------*/
-  /* 1st  window */
-  "z-index: 0; left: 268px;position: absolute; top: 207px",
-  "z-index: 0; left: 308px;position: absolute; top: 207px",
-  /*----------------- 4th floor--------------------------*/
-  "z-index: 0; left: 308px;position: absolute; top: 275px",
-  "z-index: 0; left: 388px;position: absolute; top: 275px",
-  /*----------------- 5th floor--------------------------*/
-  "z-index: 0; left: 308px;position: absolute; top: 348px",
-  "z-index: 0; left: 348px;position: absolute; top: 348px",
+  "display:block;z-index: 0;  left:22.73%;position: absolute; top: 23.25%",
+  "display:block;z-index: 0;  left:28.4%;position: absolute; top: 23.25%",
+  /* 2nd floor*/
+  "display:block;z-index: 0;  left:22.73%;position: absolute; top: 31.25%",
+  "display:block;z-index: 0;  left:25.5%;position: absolute; top: 31.25%",
+  /* 3rd floor */
+  "display:block;z-index: 0;  left:19.75%;position: absolute; top: 39%",
+  "display:block;z-index: 0;  left:22.73%;position: absolute; top: 39%",
+  /*4th floor*/
+  "display:block;z-index: 0;  left:22.73%;position: absolute; top: 47.25%",
+  "display:block;z-index: 0;  left:28.4%;position: absolute; top: 47.25%",
+
+  /*6th floor*/
+  "display:block;z-index: 0;  left:22.73%;position: absolute; top: 64%",  // 2nd window
+  "display:block;z-index: 0;  left:28.4%;position: absolute; top: 64%", // 4th window 
  /******************* Tany Omara *************************************** */
- /* tany shbak w awl door*/
- "z-index: 0; left: 706px;position: absolute; top: 400px",
- // a5r shbak //
- "z-index: 0; left: 790px;position: absolute; top: 400px",
- // Tany dor
- "z-index: 0; left: 706px;position: absolute; top: 470px",
- "z-index: 0; left: 748px;position: absolute; top: 470px",
- // talt door 
- "z-index: 0; left: 664px;position: absolute; top: 545px",
- "z-index: 0; left: 706px;position: absolute; top: 545px",
+ /*1st floor*/
+ "display:block;z-index: 0; left:51.75%;position: absolute; top: 61.15%", 
+ "display:block;z-index: 0; left:57.75%;position: absolute; top: 61.15%",
+ /*2nd floor */ 
+ "display:block;z-index: 0; left:51.75%;position: absolute; top: 69.75%", // 2nd window
+ "display:block;z-index: 0; left:54.8%;position: absolute; top: 69.75%",  //  3rd window
+ /*3rd floor */  
+ "display:block;z-index: 0; left:51.75%;position: absolute; top: 78%", //2nd window
+ /* 4th floor */
+ "display:block;z-index: 0; left:57.75%;position: absolute; top: 87%", // 4th window
  /******************* Talt Omara *************************************** */
- 
- /*talt door a5r shbak*/ 
- "z-index: 0; left: 988;position: absolute; top: 545px",
+ /*1st floor */
+ "display:block;z-index: 0; left: 82%;position: absolute; top: 40.25%",
+ /*2nd floor */ 
+ "display:block;z-index: 0; left: 72.25%;position: absolute; top: 53%",//1st window
+ "display:block;z-index: 0; left: 77%;position: absolute; top: 53%",
+ /*3rd floor */ 
+ "display:block;z-index: 0; left: 77%;position: absolute; top: 66%",//2nd window
+ "display:block;z-index: 0; left: 82%;position: absolute; top: 66%",//3rd window
  
 ]
 //to check random number
@@ -79,13 +81,13 @@ function increaseCount() {
   if(checkCountOfAppearance==countOfAppearance && policeFlag==0)
   {number++;
   checkCountOfAppearance++;
-  mainPicture.src='red.png'
+  mainPicture.style.display='none';
   }
   //condition of police shooting
   if(checkCountOfAppearance==countOfAppearance && policeFlag==1)
   {
   checkCountOfAppearance++;
-  mainPicture.src='green.png'
+  mainPicture.src='assets\\imgs\\blood.png'
   policeFlag=0;
   numberOfHeart--; 
   }
@@ -126,10 +128,6 @@ var timeObj={
   },
 }
  myVar2=setInterval(timeObj.all,speed)
-//police officer
-//hearts
-//global object member
-//function to check heart then increase or decrease
 
 
 
