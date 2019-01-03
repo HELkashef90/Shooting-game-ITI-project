@@ -7,17 +7,39 @@ var pl3=document.getElementById('pl3');
 var policeChar=document.getElementById('police');
 var policeContain=document.getElementById('policeContainer');
 var speed=2000;
-function makepl1(){window.speed=2000}
-function makepl2(){window.speed=1500}
-function makepl3(){window.speed=1000}
+function makepl1(){
+  window.speed=2000
+  lvl1.style.border="2px solid red";
+  lvl2.style.border="none";
+  lvl3.style.border="none";
+}
+function makepl2(){
+  window.speed=1500
+  lvl2.style.border="2px solid red";
+  lvl1.style.border="none";
+  lvl3.style.border="none";}
+function makepl3(){
+  window.speed=1000
+  lvl3.style.border="2px solid red";
+  lvl1.style.border="none";
+  lvl2.style.border="none";}
 function modchar1(){
   policeChar.src="assets\\police\\police1.png";
+  pl1.style.border="2px solid red";
+  pl2.style.border="none";
+  pl3.style.border="none";
 }
 function modchar2(){
   policeChar.src="assets\\police\\police2.png";
+  pl2.style.border="2px solid red";
+  pl1.style.border="none";
+  pl3.style.border="none";
 }
 function modchar3(){
   policeChar.src="assets\\police\\police 3.png";
+  pl3.style.border="2px solid red";
+  pl2.style.border="none";
+  pl1.style.border="none";
 }
 lvl1.addEventListener('click',makepl1);
 lvl2.addEventListener('click',makepl2);
@@ -185,16 +207,24 @@ var cb=function(e){
 userForm.addEventListener('submit',cb);
 
 function closePupUp4()
-{gamePupup.style.display = "none";
-userStyling.style.display= "block"; 
-policeContain.style.display="block";
+{
+  var inputname = document.getElementById("username").value;
+  var warningmsg=document.getElementById("warning");
+  if(inputname!="")
+  {
+  gamePupup.style.display = "none";
+  userStyling.style.display= "block"; 
+  policeContain.style.display="block";
+  starterFunc();
+  }
+  else 
+  {warningmsg.style.display="block";}
 }
 
-closBtn4.addEventListener('click',closePupUp4);
 var starter = document.getElementById('playNow');
 
 starter.addEventListener('click',closePupUp4);
-starter.addEventListener('click',starterFunc);
+
 
 
 

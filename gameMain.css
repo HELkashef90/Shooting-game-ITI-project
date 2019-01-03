@@ -49,3 +49,13 @@ body#gameOver
     float:left;
     width:25%;
  }
+.exit_btn
+{
+    position: absolute;;
+    right: 0;
+    font-size: 25px;
+    font-family:'Slackey'; 
+    color:aliceblue;
+    background-color:#851717;
+    border:#851717;
+    }

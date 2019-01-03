@@ -17,30 +17,31 @@
       
       <div id="userInfoStyling">
           
-        <div  class="userdata">
-          <b >Name:</b> <b id="name" >tt</b>
-        </div>
-        <div  id="life" class="userdata"> 
-            <b >heart</b> 
-            <b id="heart" >5</b> 
-            <img  src="assets\\imgs\\heart.png" style="width:30px;height:30px;">
-        </div>
-        <div class="userdata"> 
-            <b >Score:</b>
-            <b id="score" >0</b>
-            <b >/20</b>
-          </div>
-          <div class="userdata"> 
-            <b >Remaining:</b>
-           <b  id="remain">20</b> 
-          </div>
-          <div>
+            <div  class="userdata">
+                <b id="name" >tt</b>
+            </div>
+            <div  id="life" class="userdata"> 
+                <b >heart</b> 
+                <b id="heart" >5</b> 
+                <img  src="assets\\imgs\\heart.png" style="width:30px;height:30px;">
+            </div>
+            <div class="userdata"> 
+                <b >Score:</b>
+                <b id="score" >0</b>
+                <b >/20</b>
+            </div>
+            <div class="userdata"> 
+              <b >Remaining:</b>
+              <b  id="remain">20</b> 
+            </div>
+            <div >
+              <button onclick="location.href='select_game.html'" class="exit_btn" >Exit</button>
+            </div>
       </div>
-
-    </div>
-    <div id="policeContainer" style="display:none;">
-     <img id="police"src="assets\\police\\police1.png" style=width:70px;height:70px;position:static;">
-    </div>
+    <!--Character Image-->
+      <div id="policeContainer" style="display:none;">
+            <img id="police"src="assets\\police\\police1.png" style=width:70px;height:70px;position:static;">
+      </div>
     <div id="gamePupUp" class="charPopUp animate">
 
         
@@ -50,7 +51,7 @@
 
                 <h1>Please select your char</h1>
 
-                <span onclick="playAudio()" id="close4" class="close" title="Close PopUp">&times;</span>
+                <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>
                 
                 <div align="center">
                     <img class="char" id="pl1" src="assets\police\police1.png" alt="">
@@ -59,12 +60,13 @@
                 </div>
                 <h1>Please select your Level</h1>
                 <div align="center">
-                        <img class="char" id="lvl1" src="assets\imgs\SkillMedalBronze.png" alt="">
-                        <img class="char" id="lvl2" src="assets\imgs\SkillMedalGold.png" alt="">
-                        <img class="char" id="lvl3" src="assets\imgs\SkillMedalNormal.png" alt="">
+                        <img class="char" id="lvl1" src="assets\levels\lvl1.png" alt="">
+                        <img class="char" id="lvl2" src="assets\levels\lvl2.png" alt="">
+                        <img class="char" id="lvl3" src="assets\levels\lvl3.png" alt="">
             </div>
                     <h1>User Name</h1>
                     <input id="username" type="text" placeholder="Your Name">
+                    <p id="warning" style="display:none;color:red;">Please insert your name to porceed</p>
             </div>
             <div align ="center">
             <!-- <button id="playNow" onclick="starterFun()" >Play Now</button> -->
