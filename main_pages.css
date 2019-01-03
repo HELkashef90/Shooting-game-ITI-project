@@ -156,7 +156,11 @@ div#welcomePupUp {
 
 /* End of PopUp styling */
 /* ////////////////////////////////////// */
-
+.bdgs {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
 
 .char {
     width: 100px;
@@ -202,7 +206,7 @@ input {
 	
 }
 
-#playNow {
+#playNow , #tryAgain {
     text-align: center;
 	font-size: 15px;
 	box-shadow: 0 5px 7px 0 rgba(231, 211, 211, 0.2), 0 2px 7px 0 rgba(179, 157, 157, 0.19);
@@ -218,4 +222,15 @@ input {
 	color: rgb(14, 6, 6);
 	cursor: pointer;
 	outline: none;
+}
+#lossForm ,#winForm {
+    width: 25%;
+    height: 610px;
+}
+
+#winPopUp{
+    background-image: url(assets\\imgs\\fireworks.png);
+    background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 30vw;
 }
