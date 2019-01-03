@@ -76,12 +76,7 @@
         </form>
         
      </div>
-      <!-- background audio src -->
-    <audio id="bkAduio" loop="true">
-      <source src="assets\audio\game.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-
+     
  	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">
 
             
@@ -119,20 +114,37 @@
                         <input onclick="location.href='select_game.html'" id='tryAgain' type="button" value="Menu">
                     </div>
     </div>
+    <!-- background audio src -->
+    <audio id="bkAduio" loop="true">
+            <source src="assets\audio\game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
+            
+    <!-- win audio -->
 
-<!-- backGround audio script -->
-<script>
-      var x = document.getElementById("bkAduio"); 
-      x.play();
-      function playAudio() { 
-      x.play(); 
-      } 
+    <audio id="winAduio">
+                <source src="assets\audio\win-sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+    </audio>
+    <!-- loss audio -->
+    <audio id="lossAduio">
+            <source src="assets\audio\lose losing\lose funny retro video game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
+              
+    <!-- backGround audio script -->
+    <script>
+        var x = document.getElementById("bkAduio"); 
+        x.play();
+        function playAudio() { 
+        x.play(); 
+        } 
 
-      function pauseAudio() { 
-      x.pause(); 
-      } 
-      </script>  
+        function pauseAudio() { 
+        x.pause(); 
+        } 
+        </script>  
 
-      <script src="gameCode.js"></script>     
+        <script src="gameCode.js"></script>     
     </body>
 </html>

@@ -172,6 +172,8 @@ var timeObj={
       policeContain.style.display="none";
       var winPop=document.getElementById("winPopUp");
       winPop.style.display="block";
+      var winAudio = document.getElementById("winAduio");
+      winAudio.play();
     }
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
@@ -187,8 +189,11 @@ var timeObj={
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
       var losePop=document.getElementById("lossPopUp");
-      losePop.style.display="block";}
-    policeFlag=0;
+      losePop.style.display="block";
+      var lossAudio = document.getElementById("lossAduio");
+      lossAudio.play();}
+      
+      policeFlag=0;
     //condition to display police officer
     if (policeAppearance>0 && randomNumber/5==1 )
     {
