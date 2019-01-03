@@ -174,6 +174,8 @@ var timeObj={
       winPop.style.display="block";
       var winAudio = document.getElementById("winAduio");
       winAudio.play();
+      clearInterval(myVar2);
+      mainPicture.src='empty.png';
     }
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
@@ -191,6 +193,8 @@ var timeObj={
       var losePop=document.getElementById("lossPopUp");
       losePop.style.display="block";
       var lossAudio = document.getElementById("lossAduio");
+      clearInterval(myVar2);
+      mainPicture.src='empty.png';
       lossAudio.play();}
       
       policeFlag=0;
