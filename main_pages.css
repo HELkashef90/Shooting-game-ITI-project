@@ -234,3 +234,10 @@ input {
 	background-attachment: fixed;
 	background-size: 30vw;
 }
+
+#lossPopUp{
+    background-image: url(assets\\imgs\\gameover.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 30vw;
+}

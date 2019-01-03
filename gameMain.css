@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bonbon");
 @import url("https://fonts.googleapis.com/css?family=Slackey");
 @import url("https://fonts.googleapis.com/css?family=Fascinate Inline");
-body#gameMainPage
+#gameMainPage
 { 
 	background-image: url("assets\\imgs\\gamebackgnd.jpg");	
 	background-repeat: no-repeat;
@@ -59,3 +59,5 @@ body#gameOver
     background-color:#851717;
     border:#851717;
     }
+
+  

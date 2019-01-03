@@ -81,7 +81,44 @@
       <source src="assets\audio\game.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
-      
+
+ 	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">
+
+            
+            <form id='lossForm' >
+                      
+                <div class="imgcontainer">
+
+
+                    <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>
+                    
+            </form>
+            
+         </div>
+
+             <div align ="center">
+                <input onclick="location.href='gameCode.html'" id='tryAgain' type="button" value="Try Again">
+            </div>
+</div>
+
+    <div id="winPopUp" class="charPopUp animate" style="display:none;">    
+                <form >
+              
+                 <div class="imgcontainer">
+                    <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>
+
+                    <h1>Congratulations</h1>   
+                        <div align="center">
+                            <img class="bdgs" src="assets\\badges\\badge1.png" alt="">
+                            <img class="bdgs" src="assets\\badges\\badge2.png" alt="">
+                            <img class="bdgs" src="assets\\badges\\badge3.png" alt="">
+                        </div>
+                 </div>        
+                </form>
+                    <div align ="center">
+                        <input onclick="location.href='select_game.html'" id='tryAgain' type="button" value="Menu">
+                    </div>
+    </div>
 
 <!-- backGround audio script -->
 <script>

@@ -167,7 +167,12 @@ var timeObj={
     remain.innerHTML = numberOfRemain;
     console.log(numberOfRemain)
     if(numberOfRemain==0)
-    {window.location.href = "gameWin.html";}
+    {
+      userStyling.style.display= "none"; 
+      policeContain.style.display="none";
+      var winPop=document.getElementById("winPopUp");
+      winPop.style.display="block";
+    }
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
     if(click==0 && policeFlag==0)
@@ -178,7 +183,11 @@ var timeObj={
       heart.innerHTML = numberOfHeart;
     }
     if (numberOfHeart==0)
-    {window.location.href = "gameOver.html";}
+    {
+      userStyling.style.display= "none"; 
+      policeContain.style.display="none";
+      var losePop=document.getElementById("lossPopUp");
+      losePop.style.display="block";}
     policeFlag=0;
     //condition to display police officer
     if (policeAppearance>0 && randomNumber/5==1 )
