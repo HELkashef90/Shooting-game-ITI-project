@@ -36,14 +36,14 @@ function modchar2(){
   pl3.style.border="none";
 }
 function modchar3(){
-  policeChar.src="assets\\police\\police 3.png";
+  policeChar.src="assets\\police\\police3.png";
   pl3.style.border="2px solid red";
   pl2.style.border="none";
   pl1.style.border="none";
 }
 lvl1.addEventListener('click',makepl1);
 lvl2.addEventListener('click',makepl2);
-lvl3.addEventListener('click',makepl2);
+lvl3.addEventListener('click',makepl3);
 pl1.addEventListener('click',modchar1);
 pl2.addEventListener('click',modchar2);
 pl3.addEventListener('click',modchar3);
@@ -183,7 +183,7 @@ var timeObj={
     //condition to display police officer
     if (policeAppearance>0 && randomNumber/5==1 )
     {
-      mainPicture.src='police.jpg'
+      mainPicture.src='assets\\police\\police4.png'
       policeAppearance--;
       policeFlag=1;
     }
