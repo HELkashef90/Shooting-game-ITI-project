@@ -1,6 +1,9 @@
 var lvl1=document.getElementById('lvl1');
 var lvl2=document.getElementById('lvl2');
 var lvl3=document.getElementById('lvl3');
+var bdg1=document.getElementById('bdg1');
+var bdg2=document.getElementById('bdg2');
+var bdg3=document.getElementById('bdg3');
 var pl1=document.getElementById('pl1');
 var pl2=document.getElementById('pl2');
 var pl3=document.getElementById('pl3');
@@ -176,6 +179,21 @@ var timeObj={
       winAudio.play();
       clearInterval(myVar2);
       mainPicture.src='empty.png';
+      if(numberOfHeart==5&&window.speed==2000)
+      {
+        bdg1.src='assets\\badges\\badge1.png'
+      }
+      if(numberOfHeart==5&&window.speed==1500)
+      {
+        bdg1.src='assets\\badges\\badge1.png'
+        bdg2.src='assets\\badges\\badge2.png'
+      }
+      if(numberOfHeart==5&&window.speed==1000)
+      {
+        bdg1.src='assets\\badges\\badge1.png'
+        bdg2.src='assets\\badges\\badge2.png'
+        bdg3.src='assets\\badges\\badge3.png'
+      }
     }
     checkCountOfAppearance=0;
     randomNumber=randomObj.ran()
