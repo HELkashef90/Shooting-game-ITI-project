@@ -98,11 +98,11 @@ img#policeSniperText {
 
 /* pupup Content Box */
 .pupUpContent {
-    background-color: #ec7878;
+    background-color: #ceb0b0;
     margin: 4% auto 15% auto;
     border: 1px solid #888;
     width: 30%; 
-    opacity: .8;
+    /* opacity: .8; */
     border-radius: 2%;
 }
 
@@ -128,7 +128,7 @@ div#welcomePupUp {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
 }
 
 /* The Close Button (x) */
