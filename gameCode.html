@@ -77,12 +77,17 @@
         
      </div>
      
- 	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">      
+ 	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">   
+      <div class="imgcontainer">
+      <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>                  
+      <h1>YOU LOSE</h1>  
+      </div>
+      <div align ="center">   
             <form id='lossForm' >        
-                <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>                  
+                
                 <img id="loseimg" src="assets\\imgs\\lose.jpg" alt="">   
             </form>
-             <div align ="center">
+             
             
                 <input onclick="location.href='gameCode.html'" id='tryAgain' type="button" value="Try Again">
             </div>
