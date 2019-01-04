@@ -184,16 +184,13 @@ var timeObj={
     console.log(numberOfRemain)
     if(numberOfRemain==0)
     {
-	mainPicture.style.display='none';      
-	clearInterval(myVar2);
       bkAudio.pause();
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
-      /*mainPicture.style.display='none';*/
       var winPop=document.getElementById("winPopUp");
       if(levelchoice==1)
       {
-            document.getElementById("bdg1").src="assets\\badges\\badge1.png";
+      document.getElementById("bdg1").src="assets\\badges\\badge1.png";
 	    document.getElementById("bdg2").src="assets\\badges\\badge2g.png";
 	    document.getElementById("bdg3").src="assets\\badges\\badge3g.png";
       }
@@ -205,15 +202,15 @@ var timeObj={
       }
       else
       {
-            document.getElementById("bdg1").src="assets\\badges\\badge1.png";
+      document.getElementById("bdg1").src="assets\\badges\\badge1.png";
 	    document.getElementById("bdg2").src="assets\\badges\\badge2.png";
 	    document.getElementById("bdg3").src="assets\\badges\\badge3.png";
       }
       winPop.style.display="block";
       var winAudio = document.getElementById("winAduio");
       winAudio.play();
-      /*clearInterval(myVar2);*/
-      /*mainPicture.src='assets\\img\\empty.png';*/
+      clearInterval(myVar2);
+      mainPicture.src='empty.png';
       if(numberOfHeart>1&&window.speed==2000)
       {
         bdg1.src='assets\\badges\\badge1.png'
