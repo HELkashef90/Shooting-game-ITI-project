@@ -190,18 +190,21 @@ var timeObj={
       var winPop=document.getElementById("winPopUp");
       if(levelchoice==1)
       {
-        var badgewin =document.getElementById("bdg1");
-        badgewin.src="assets\\badges\\badge1.png";
+            document.getElementById("bdg1").src="assets\\badges\\badge1.png";
+	    document.getElementById("bdg2").src="assets\\badges\\badge2g.png";
+	    document.getElementById("bdg3").src="assets\\badges\\badge3g.png";
       }
       else if (levelchoice==2)
       {
-        var badgewin =document.getElementById("bdg2");
-        badgewin.src="assets\\badges\\badge2.png";
+            document.getElementById("bdg1").src="assets\\badges\\badge1.png";
+	    document.getElementById("bdg2").src="assets\\badges\\badge2.png";
+	    document.getElementById("bdg3").src="assets\\badges\\badge3g.png";
       }
       else
       {
-        var badgewin =document.getElementById("bdg3");
-        badgewin.src="assets\\badges\\badge3.png";
+            document.getElementById("bdg1").src="assets\\badges\\badge1.png";
+	    document.getElementById("bdg2").src="assets\\badges\\badge2.png";
+	    document.getElementById("bdg3").src="assets\\badges\\badge3.png";
       }
       winPop.style.display="block";
       var winAudio = document.getElementById("winAduio");

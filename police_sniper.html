@@ -7,6 +7,7 @@
     <title>PoliceSniperGame</title>
     <link rel="icon" href="assets\imgs\team_logo_1.png"> <link>
     <link rel="stylesheet" href="main_pages.css"> 
+    <link rel="stylesheet" href="gameMain.css"> 
 </head>
 <body>
 
@@ -37,11 +38,9 @@
         <form class="pupUpContent animate">
             <div class="imgcontainer">
                 <span onclick="pauseAudio1() ; playAudio()" id="close2" class="close" title="Close PopUp">&times;</span>
-                <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
-                <p>story ----- Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dolor dignissimos inventore voluptatum atque obcaecati,
-                minima odio molestias est ab quasi distinctio necessitatibus facilis eveniet velit,
-                quas deserunt, adipisci quae alias! </p>
+            <img id='prev' src="assets//story//left.png"> <img id="storyimg"src="assets//story//scene0.jpg"> <img id='next' src="assets//story//right.png">
+            <p id="pa1" >Villa Restal is here in Gotham city </p>
+
             </div> 
         </form>
     </div>
@@ -102,5 +101,6 @@
         </script>
         <!-- Script File -->
     <script src="police_sniper.js"></script>
+    <script src="storySlideShow.js"></script>
 </body>
 </html>
