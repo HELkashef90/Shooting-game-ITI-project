@@ -144,7 +144,8 @@ function increaseCount() {
   if(checkCountOfAppearance==countOfAppearance && policeFlag==0)
   {number++;
   checkCountOfAppearance++;
-  mainPicture.style.display='none';
+  // mainPicture.style.display='none';
+  mainPicture.src='thief2.png';
   var shootAudio =document.getElementById("shootAduio");
   shootAudio.play();
   }
