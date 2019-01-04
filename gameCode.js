@@ -149,7 +149,7 @@ function increaseCount() {
   {number++;
   checkCountOfAppearance++;
   // mainPicture.style.display='none';
-  mainPicture.src='thief2.png';
+  mainPicture.src='assets\\thief\\thief2.png';
   var shootAudio =document.getElementById("shootAduio");
   shootAudio.play();
   }
@@ -175,7 +175,7 @@ var timeObj={
     document.getElementById("bdg1").src="assets\\badges\\badge1g.png";
     document.getElementById("bdg2").src="assets\\badges\\badge2g.png";
     document.getElementById("bdg3").src="assets\\badges\\badge3g.png";
-    mainPicture.src='thief.png'
+    mainPicture.src='assets\\thief\\thief.png'
     countOfAppearance=0;
     var remain = document.getElementById('remain');
     numberOfRemain = remain.innerHTML;
@@ -184,9 +184,12 @@ var timeObj={
     console.log(numberOfRemain)
     if(numberOfRemain==0)
     {
+	mainPicture.style.display='none';      
+	clearInterval(myVar2);
       bkAudio.pause();
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
+      /*mainPicture.style.display='none';*/
       var winPop=document.getElementById("winPopUp");
       if(levelchoice==1)
       {
@@ -209,8 +212,8 @@ var timeObj={
       winPop.style.display="block";
       var winAudio = document.getElementById("winAduio");
       winAudio.play();
-      clearInterval(myVar2);
-      mainPicture.src='empty.png';
+      /*clearInterval(myVar2);*/
+      /*mainPicture.src='assets\\img\\empty.png';*/
       if(numberOfHeart>1&&window.speed==2000)
       {
         bdg1.src='assets\\badges\\badge1.png'

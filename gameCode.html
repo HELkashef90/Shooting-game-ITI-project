@@ -28,7 +28,7 @@
             <div class="userdata"> 
                 <b >Score:</b>
                 <b id="score" >0</b>
-                <b >/20</b>
+                <!-- <b >/20</b> -->
             </div>
             <div class="userdata"> 
               <b >Remaining:</b>
@@ -77,25 +77,16 @@
         
      </div>
      
- 	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">
-
-            
-            <form id='lossForm' >
-                      
-                <div class="imgcontainer">
-
-
-                    <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>
-                    
+ 	 <div id="lossPopUp" class="charPopUp animate" style="display:none;">      
+            <form id='lossForm' >        
+                <span onclick="location.href='select_game.html'" id="close4" class="close" title="Close PopUp">&times;</span>                  
+                <img id="loseimg" src="assets\\imgs\\lose.jpg" alt="">   
             </form>
-              <!-- <img id="lose" src="lose.png" alt=""> -->
-         </div>
-
              <div align ="center">
             
                 <input onclick="location.href='gameCode.html'" id='tryAgain' type="button" value="Try Again">
             </div>
-</div>
+    </div>
 
     <div id="winPopUp" class="charPopUp animate" style="display:none;">    
                 <form >

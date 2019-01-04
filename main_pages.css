@@ -184,7 +184,7 @@ div#welcomePupUp {
     margin: 4% auto 5% auto;
     border: 1px solid #888;
     width: 30%;
-    height: 750px;
+    height: auto;
     border-radius: 5%;
     
 }
@@ -223,9 +223,9 @@ input {
 	cursor: pointer;
 	outline: none;
 }
-#lossForm ,#winForm {
+#winForm {
     width: 25%;
-    height: 610px;
+    height: auto;
 }
 
 #winPopUp{
@@ -236,8 +236,8 @@ input {
 }
 
 #lossPopUp{
-    background-image: url(assets\\imgs\\lose.jpg);
+    /* background-image: url(assets\\imgs\\lose.jpg);
     background-repeat: no-repeat;
-	/* background-attachment: fixed; */
-	background-size: contain; 
+	background-attachment: fixed;
+	background-size: cover;  */
 }
