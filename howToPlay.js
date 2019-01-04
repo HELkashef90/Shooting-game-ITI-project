@@ -3,12 +3,14 @@
     var btnprev1 = document.getElementById("prev1");
     img1=document.getElementById('helpimg');
     parg1=document.getElementById('pa2');
+    var video=document.getElementById("video");
     var x1=0;
     function changeimage1()
     {     
         if (x1==0)
         {img1.setAttribute('src','assets//howtoplay//2.jpg');
         parg1.innerHTML="Select the level";
+        
         }
         else if (x1==1)
         {img1.setAttribute('src','assets//howtoplay//1.jpg');
@@ -29,13 +31,15 @@
         {img1.setAttribute('src','assets//howtoplay//6.jpg');
         parg1.innerHTML="this is how it is down";}
         else if (x1==7)
-        {img1.setAttribute('src','assets//howtoplay//7.jpg');
-        parg1.innerHTML="this is your badges when you win";}
+        {
+        img1.setAttribute('src','assets//howtoplay//7.jpg');
+        parg1.innerHTML="this is your badges when you win";
+        }
     }
     function inc1(){
             x1++;
             console.log(x1);
-            if(x1>7){x1=7;clearInterval(inc_fun1);}
+            if(x1>8){x1=8;clearInterval(inc_fun1);}
             else{changeimage1();}
     }
     function dec1(){
