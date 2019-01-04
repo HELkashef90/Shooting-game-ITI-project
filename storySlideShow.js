@@ -65,4 +65,8 @@ window.onload=function()
     function dec_stop ()
     {clearInterval(dec_fun);}
      
+
+////////////////////////////////////////////////////////////////////////////
+
+   
 }
