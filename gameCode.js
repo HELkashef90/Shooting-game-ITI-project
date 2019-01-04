@@ -10,19 +10,23 @@ var pl3=document.getElementById('pl3');
 var policeChar=document.getElementById('police');
 var policeContain=document.getElementById('policeContainer');
 var speed=2000;
+var levelchoice=1;
 function makepl1(){
   window.speed=2000
+  levelchoice=1;
   lvl1.style.border="2px solid red";
   lvl2.style.border="none";
   lvl3.style.border="none";
 }
 function makepl2(){
   window.speed=1500
+  levelchoice=2;
   lvl2.style.border="2px solid red";
   lvl1.style.border="none";
   lvl3.style.border="none";}
 function makepl3(){
   window.speed=1000
+  levelchoice=3;
   lvl3.style.border="2px solid red";
   lvl1.style.border="none";
   lvl2.style.border="none";}
@@ -168,6 +172,9 @@ function increaseCount() {
 var timeObj={
   all:function()
   { //change of thief pic
+    document.getElementById("bdg1").src="assets\\badges\\badge1g.png";
+    document.getElementById("bdg2").src="assets\\badges\\badge2g.png";
+    document.getElementById("bdg3").src="assets\\badges\\badge3g.png";
     mainPicture.src='thief.png'
     countOfAppearance=0;
     var remain = document.getElementById('remain');
@@ -181,6 +188,21 @@ var timeObj={
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
       var winPop=document.getElementById("winPopUp");
+      if(levelchoice==1)
+      {
+        var badgewin =document.getElementById("bdg1");
+        badgewin.src="assets\\badges\\badge1.png";
+      }
+      else if (levelchoice==2)
+      {
+        var badgewin =document.getElementById("bdg2");
+        badgewin.src="assets\\badges\\badge2.png";
+      }
+      else
+      {
+        var badgewin =document.getElementById("bdg3");
+        badgewin.src="assets\\badges\\badge3.png";
+      }
       winPop.style.display="block";
       var winAudio = document.getElementById("winAduio");
       winAudio.play();
