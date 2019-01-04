@@ -236,7 +236,7 @@ input {
 }
 
 #lossPopUp{
-    background-image: url(lose.jpg);
+    background-image: url(assets\\imgs\\lose.jpg);
     background-repeat: no-repeat;
 	/* background-attachment: fixed; */
 	background-size: contain; 
