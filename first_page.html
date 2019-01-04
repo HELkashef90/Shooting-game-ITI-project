@@ -12,60 +12,54 @@
 <body>
     <!-- controls background audio -->
     <div>
-    <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
-    <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
+      <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
+       <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
     </div>
     <!-- logo -->
-<div align = 'center'>
-    <div>
-    <img class="center_logo" id='logo1' align = 'center' src="assets\imgs\team_logo_1.png" alt="">
+    <div align = 'center'>
+        <div>
+        <img class="center_logo" id='logo1' align = 'center' src="assets\imgs\team_logo_1.png" alt="">
+        </div>
+        <div>
+        <img class="center_logo" id='logo2' align = 'center' src="assets\imgs\team_logo_2.gif" alt="">
+        </div>
     </div>
-    <div>
-    <img class="center_logo" id='logo2' align = 'center' src="assets\imgs\team_logo_2.gif" alt="">
-    </div>
-</div>
     <!-- main button  -->
- <div class="center_btn" align ='center' id='fist_page_btn'>
-    <button onclick="location.href='select_game.html'" class="mainbtn" id='selectBtn' >Select Game</button>
-    <button class="mainbtn" id='creditsBtn' >Credits</button>
- </div>
+    <div class="center_btn" align ='center' id='fist_page_btn'>
+        <button onclick="location.href='select_game.html'" class="mainbtn" id='selectBtn' >Select Game</button>
+        <button class="mainbtn" id='creditsBtn' >Credits</button>
+    </div>
 
  <!-- credits Popup box -->
- <div id="creditsPupUp" class="pupUpBackGround ">
+    <div id="creditsPupUp" class="pupUpBackGround ">
   
         <form class="pupUpContent animate ">
               
-          <div class="imgcontainer">
-            <span id="close" class="close" title="Close PopUp">&times;</span>
-            <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
-            <p>This Game was made for eductional purposes </br>and is not meant
-            to be used commerically </br></br>
-            <b style="color:rgb(102, 33, 20)">Team Members</b></br>  Ahmed Hussien Awaad </br>  Aya Mohamed </br>  Hossam El-Kashif </br>  Nada Mohamed Magdy </p>
-            <b style="color:rgb(102, 33, 20)">Team Github Accounts</b></br>  awaad1804 </br>  AyaAltayebiti </br> HELkashef90 </br>  nadashata </p>
-            </form>
-      </div>
-      </div>
+            <div class="imgcontainer">
+                <span id="close" class="close" title="Close PopUp">&times;</span>
+                <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
+                <p>This Game was made for educational purposes and is not meant to be used commercially </br></br>
+                <b style="color:rgb(102, 33, 20)">Team Members</b></br>  Ahmed Hussien Awaad </br>  Aya Mohamed </br>  Hossam EL-Kashef </br>  Nada Mohamed Magdy </p>
+                <b style="color:rgb(102, 33, 20)">Team Github Accounts</b></br>  awaad1804 </br>  AyaAltayebiti </br> HELkashef90 </br>  nadashata </p>
+            </div>
+        </form>
+    </div>
       <!-- welcome popup -->
     <div id="welcomePupUp" >
         <form class="pupUpContent animate">
             <div class="imgcontainer">
                 <span onclick="playAudio()" id="close3" class="close" title="Close PopUp">&times;</span>
                 <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
-                <p>Welcome to the game zone, it is made for the favour of reminding people by the 90th taste
-                of games, and the ones who is seeking to find a flash back from the past taste, Enjoy...
+                <p>Welcome to the GameZone world, it's designed to remind people of the 90th game's taste,
+                        and the ones who are seeking to find a flashback from the past taste, Enjoy...
                 </br></br>
-                <em style="color:rgb(102, 33, 20)">*Please Put your headphones on as the back ground music will be turned on once you close
-                this pop up</em></br>
-                <em style="color:rgb(102, 33, 20)">**The perfered resolution to play is 1250*600</em> </p>
+                <em style="color:rgb(102, 33, 20)">*Please Put your headphones on as the background music will be turned on once you close this pop-up
+                </br> also, you can control the music by top left buttons at any page</em></br>
+                <em style="color:rgb(102, 33, 20)">**The preferred resolution to play is 1250*600</em> </p>
                 <!-- <button onclick="playAudio()" class="mainbtn" id='letsStartBtn' >Let's Go</button> -->
             </div> 
         </form>
     </div>
- <!-- <embed id="bkAduio" src="assets\audio\33 Mario Bros Stage Theme 2.mp3" autostart="true" loop="true" hidden="false" volume="75" height="50" width="70"></body> -->
-    
-
-
-
     <!-- background audio src -->
     <audio id="bkAduio" loop="true">
             <source src="assets\audio\012.mp3" type="audio/mpeg">
