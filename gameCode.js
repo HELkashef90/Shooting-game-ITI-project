@@ -57,9 +57,10 @@ var username=document.getElementById('username').value;
 var nameOnPop=document.getElementById('name');
 nameOnPop.innerHTML = username;
 console.log(username);
-
+var bkAudio=document.getElementById("bkAduio");
+bkAudio.play();
 var mainPicture=document.getElementById('first')
-var policeAppearance=2;
+var policeAppearance=5;
 var random
 var lastrandom
 var countOfAppearance;
@@ -69,7 +70,7 @@ var previousNumber
 var thiefFlag=0
 var click=1
 var numberOfHeart;
-var numberOfRemain=7
+var numberOfRemain=7;
 
 
 //object to get random numbers
@@ -127,7 +128,7 @@ console.log(randomNumber)
 //function to change target
 function changeTarget()
 { 
-mainPicture.addEventListener("click", increaseCount)
+mainPicture.addEventListener("click", increaseCount);
 mainPicture.style=posArr[randomNumber]
 //click=0;
 }
@@ -144,6 +145,8 @@ function increaseCount() {
   {number++;
   checkCountOfAppearance++;
   mainPicture.style.display='none';
+  var shootAudio =document.getElementById("shootAduio");
+  shootAudio.play();
   }
   //condition of police shooting
   if(checkCountOfAppearance==countOfAppearance && policeFlag==1)
@@ -151,7 +154,9 @@ function increaseCount() {
   checkCountOfAppearance++;
   mainPicture.src='assets\\imgs\\blood.png'
   policeFlag=0;
-  numberOfHeart--; 
+  numberOfHeart--;
+  var shootAudio =document.getElementById("shootAduio");
+  shootAudio.play();
   }
   score.innerHTML = number;
   heart.innerHTML = numberOfHeart;
@@ -171,6 +176,7 @@ var timeObj={
     console.log(numberOfRemain)
     if(numberOfRemain==0)
     {
+      bkAudio.pause();
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
       var winPop=document.getElementById("winPopUp");
@@ -179,16 +185,16 @@ var timeObj={
       winAudio.play();
       clearInterval(myVar2);
       mainPicture.src='empty.png';
-      if(numberOfHeart==5&&window.speed==2000)
+      if(numberOfHeart>1&&window.speed==2000)
       {
         bdg1.src='assets\\badges\\badge1.png'
       }
-      if(numberOfHeart==5&&window.speed==1500)
+      if(numberOfHeart>1&&window.speed==1500)
       {
         bdg1.src='assets\\badges\\badge1.png'
         bdg2.src='assets\\badges\\badge2.png'
       }
-      if(numberOfHeart==5&&window.speed==1000)
+      if(numberOfHeart>1&&window.speed==1000)
       {
         bdg1.src='assets\\badges\\badge1.png'
         bdg2.src='assets\\badges\\badge2.png'
@@ -206,6 +212,7 @@ var timeObj={
     }
     if (numberOfHeart==0)
     {
+      bkAudio.pause();
       userStyling.style.display= "none"; 
       policeContain.style.display="none";
       var losePop=document.getElementById("lossPopUp");
@@ -217,7 +224,7 @@ var timeObj={
       
       policeFlag=0;
     //condition to display police officer
-    if (policeAppearance>0 && randomNumber/5==1 )
+    if ((policeAppearance>0 && randomNumber/5==1 )||(policeAppearance>0 && randomNumber/3==1 )||(policeAppearance>0 && randomNumber/11==1 ))
     {
       mainPicture.src='assets\\police\\police4.png'
       policeAppearance--;
