@@ -236,8 +236,8 @@ input {
 }
 
 #lossPopUp{
-    background-image: url(assets\\imgs\\gameover.jpg);
+    /* background-image: url(assets\\imgs\\gameover.jpg);
     background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 30vw;
+	background-size: 30vw; */
 }
