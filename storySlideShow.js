@@ -18,7 +18,7 @@ window.onload=function()
         {img.setAttribute('src','assets//story//scene2.jpg');
         parg.innerHTML="he managed to attack some of the houses";}
         else if (x==3)
-        {img.setAttribute('src','assets//story//scene3.jpg');
+        {img.setAttribute('src','assets//story//scene3.png');
         parg.innerHTML="but an obstacle has arosen for him the new security systems";}
         else if (x==4)
         {img.setAttribute('src','assets//story//scene4.jpg');
@@ -30,7 +30,7 @@ window.onload=function()
         {img.setAttribute('src','assets//story//scene6.jpg');
         parg.innerHTML="and put him behind bars for good";}
         else if (x==7)
-        {img.setAttribute('src','assets//story//scene7.jpg');
+        {img.setAttribute('src','assets//story//scene7.png');
         parg.innerHTML="its your turn now to kill his followers";}
     }
     function inc(){
